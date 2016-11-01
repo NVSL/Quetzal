@@ -15,7 +15,6 @@ from Swoop.ext.ShapelySwoop import  ShapelySwoop
 from Swoop.ext.ShapelySwoop import polygon_as_svg
 from shapely.geometry import *
 
-from matplotlib import pyplot as plt
 from descartes import PolygonPatch
 
 ############################
@@ -67,6 +66,7 @@ def extract_components(element):
 # Prints locked and unlocked elements dictionaries together with the board dimension
 # (e.g  print_board_elements(board, locked_elements, unlocked_elements))
 def print_board_elements (brd, elementone, elementtwo):
+    from matplotlib import pyplot as plt
 
     # Extract Polygons
     brdDimension = extract_board(brd)
@@ -126,6 +126,7 @@ def print_board_elements (brd, elementone, elementtwo):
 # Prints given board layers in an array 
 # (e.g  print_board_layers (brd, ["Dimensions", "tKeepout"])) 
 def print_board_layers (brd, layers):
+    from matplotlib import pyplot as plt
 
     # Extract Polygons
     brdDimension = extract_board(brd)
