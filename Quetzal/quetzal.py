@@ -15,8 +15,18 @@ from Swoop.ext.ShapelySwoop import  ShapelySwoop
 from Swoop.ext.ShapelySwoop import polygon_as_svg
 from shapely.geometry import *
 
-from matplotlib import pyplot as plt
-from descartes import PolygonPatch
+dumping_geometry_works = True
+try:
+    import matplotlib
+    from matplotlib import pyplot as plt
+    from descartes import PolygonPatch
+except RuntimeError as e:
+    dumping_geometry_works = False
+except ImportError as e:
+    dumping_geometry_works = False
+
+#from matplotlib import pyplot as plt
+#from descartes import PolygonPatch
 
 ############################
 ## Global Variables       ##
@@ -355,7 +365,7 @@ def main():
     ret = unlocked_to_locked(board, locked_elements, unlocked_elements)
     if (ret == 0):
         print ("No parts overlap or are off-Board")
-        sys.exit(0)
+        #sys.exit(0)
 
     ## Get board dimensions
     board_min_x = board.bounds[0]
