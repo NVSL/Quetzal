@@ -259,8 +259,9 @@ def check_unlocked_components (board, locked_elements, unlocked_elements):
 def main():
 
 	## Quetzal command line Arguments
-    parser = argparse.ArgumentParser(description="This tool automatically places unlocked elements \
-                                    (unplaced components) of a Eagle .brd file inside the board.")
+    parser = argparse.ArgumentParser(
+        description="This tool automatically places unlocked elements (unplaced components) of a Eagle .brd file inside the board."
+    )
     parser.add_argument("-i","--inbrd",
                         help="The .brd file with unlocked elements to be placed.",
                         metavar="<unplaced_board>.brd",
@@ -324,7 +325,7 @@ def main():
     ## Move elements (components)
     element_x = 0
     element_y = 0
-    BOARD_CLEARANCE = 1.5
+    BOARD_CLEARANCE = 0.5
     move_dictionary = {} # Type {element.get_name(): [moves_x, moves_y, width, height]}
     board_pass = 0
     while (board_pass == 0):
