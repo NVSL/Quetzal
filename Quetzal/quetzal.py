@@ -325,7 +325,7 @@ def main():
     ## Move elements (components)
     element_x = 0
     element_y = 0
-    BOARD_CLEARANCE = 0.5
+    BOARD_CLEARANCE = 1.0
     move_dictionary = {} # Type {element.get_name(): [moves_x, moves_y, width, height]}
     board_pass = 0
     while (board_pass == 0):
@@ -358,7 +358,7 @@ def main():
                 ## If moving in y causes element to be off-Board then
                 ## we have reach all possible moves through the board. 
                 if ( (element_y + height/2)  > (board_max_y - BOARD_CLEARANCE)):
-                    print ("Error unlocked part couldn't be placed on board")
+                    raise Exception ("Error unlocked part couldn't be placed on board")
                     board_pass = -1
 
                 ## Save updated moves in the dictionary 
