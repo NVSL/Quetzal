@@ -256,45 +256,20 @@ def check_unlocked_components (board, locked_elements, unlocked_elements):
 
 
 
-def main():
 
-	## Quetzal command line Arguments
-    parser = argparse.ArgumentParser(
-        description="This tool automatically places unlocked elements (unplaced components) of a Eagle .brd file inside the board."
-    )
-    parser.add_argument("-i","--inbrd",
-                        help="The .brd file with unlocked elements to be placed.",
-                        metavar="<unplaced_board>.brd",
-                        required=True)
-    parser.add_argument("-o","--outbrd",
-    					help="Name of output .brd file",
-    					metavar="<output>.brd")
-    parser.add_argument("-d","--display",
-    					help="Displays the boards and its elements before and after placing",
-    					action='store_true', dest='display')
-    args = parser.parse_args()
+## Expects a Swoop.ShapelySchematicFile object as input 
+## and returns a Swoop.ShapelySchematicFile object as output 
+## with the auto-placed elements. 
+def autoplace (brd, display = False):
 
-
-    ## Open the board and check that the file exists and
-    ## is of type (*brd)
     try:
-        ## ShapelySwoop Open Board
-        brd = ShapelySwoop.open(args.inbrd)
-
-        ## Extract elements8
+        ## Extract elements
         board = extract_board(brd)
         elements = brd.get_elements()
-        pass
-
-    except IOError:
-        print "Filed to open {} : Not such file".format(args.inbrd)
-        sys.exit(0)
-        pass
 
     except AttributeError:
         print "Error reading {} : file extension is not Eagle Board (*.brd)".format(args.inbrd)
-        sys.exit(0)
-        pass
+        return None
     
 
     ## Get locked and unlocked elements in a dictionary
@@ -311,8 +286,8 @@ def main():
 
     ## Displays the board in a plot with locked elements in blue and 
     ## unlocked elements in orange **before** stating to place. 
-    if (args.display):
-    	print_board_elements(brd, locked_elements, unlocked_elements)
+    if (display):
+        print_board_elements(brd, locked_elements, unlocked_elements)
 
 
     ## Get board dimensions
@@ -332,7 +307,7 @@ def main():
         ## Check if element overlaps or is off Board
         element = check_unlocked_components(board, locked_elements, unlocked_elements)
         if (element == None):
-            print ("Finish moving overlapped or off-Board elements")
+            ## Finish moving overlapped or off-Board elements
             board_pass = 1
         else:
             ## Check if unlocked element is already in move_dictionary
@@ -384,7 +359,7 @@ def main():
                 ## Check if the unlocked element is smaller than the board
                 if ((element_x + width/2) > (board_max_x - BOARD_CLEARANCE) or 
                     (element_y + height/2) > (board_max_y - BOARD_CLEARANCE)):
-                    print ("Element to move is bigger than the board")
+                    raise Exception ("Element to move is bigger than the board")
                     board_pass = -1
 
             ## Update unlocked element with new x and y values
@@ -397,20 +372,69 @@ def main():
             #print "Exec Time 3 = {}".format(END - START)
 
 
-    ## Displays the board in a plot with locked elements in blue and 
-    ## unlocked elements in orange **after** placing. 
-    if (args.display):
-    	print_board_elements(brd, locked_elements, unlocked_elements)
-    #print_board_layers(brd, ALL_LAYERS)
+    ## Return None if there was an error, else return 
+    ## the auto-placed brd (Swoop.ShapelySchematicFile)
+    if (board_pass == 1):
+
+        ## Displays the board in a plot with locked elements in blue and 
+        ## unlocked elements in orange **after** placing. 
+        if (display):
+            print_board_elements(brd, locked_elements, unlocked_elements)
+            #print_board_layers(brd, ALL_LAYERS)
+
+        return brd
+
+    else:
+        return None
+
+
+
+def main():
+
+	## Quetzal command line Arguments
+    parser = argparse.ArgumentParser(
+        description="This tool automatically places unlocked elements (unplaced components) of a Eagle .brd file inside the board."
+    )
+    parser.add_argument("-i","--inbrd",
+                        help="The .brd file with unlocked elements to be placed.",
+                        metavar="<unplaced_board>.brd",
+                        required=True)
+    parser.add_argument("-o","--outbrd",
+    					help="Name of output .brd file",
+    					metavar="<output>.brd")
+    parser.add_argument("-d","--display",
+    					help="Displays the boards and its elements before and after placing",
+    					action='store_true', dest='display')
+    args = parser.parse_args()
+
+
+    ## Open the board and check that the file exists and
+    ## is of type (*brd)
+    try:
+        ## ShapelySwoop Open Board
+        inputbrd = ShapelySwoop.open(args.inbrd)
+
+    except IOError:
+        print "Filed to open {} : Not such file".format(args.inbrd)
+        exit(1)
+
+
+    ## Auto-place unlocked components
+    outputbrd = autoplace(inputbrd, args.display)
+    if (outputbrd == None):
+        print "Filed to auto-place Board"
+        exit(1)
+    else:
+        print "Finish moving overlapped or off-Board elements"
 
 
     ## Write Output board file
     if (args.outbrd):
-        brd.write(args.outbrd)
+        outputbrd.write(args.outbrd)
 
 
     ## Exit
-    sys.exit(0)
+    exit(0)
 
 
 if __name__ == "__main__":
