@@ -8551,25 +8551,25 @@ design rules under a new name.
 <attribute name="DISTPN" value="36-968-ND" x="0" y="0" size="0" layer="48" display="off"/>
 <attribute name="HIERARCHY_NAME" value="battery.BATT1" x="0" y="0" size="0" layer="48" display="off"/>
 </element>
-<element name="D1" library="KoalaBuild" package="DIOAD1125W78L520D270_HS" value="" x="5.9159125" y="-30.688709375" rot="R180">
-<attribute name="DATASHEET" value="http://www.st.com/web/en/resource/technical/document/datasheet/CD00001625.pdf" x="0" y="-6.35" size="0" layer="48" display="off"/>
-<attribute name="DATA_SHEET" value="http://www.st.com/web/en/resource/technical/document/datasheet/CD00001625.pdf" x="0" y="-6.35" size="0" layer="48" display="off"/>
-<attribute name="DB" value="/Users/swanson/research/NVSL/src/with-git/gtron_devel/Gadgets/Tools/Koala/Koala/PartLibrary/Digikey/Schottky-Diodes-TH.csv" x="0" y="-6.35" size="0" layer="48" display="off"/>
-<attribute name="DEVICE" value="TH-DO-41-AND-DO-204AL" x="0" y="-6.35" size="0" layer="48" display="off"/>
-<attribute name="DIST" value="Digikey" x="0" y="-6.35" size="0" layer="48" display="off"/>
-<attribute name="DISTPN" value="497-4547-1-ND" x="0" y="-6.35" size="0" layer="48" display="off"/>
-<attribute name="HIERARCHY_NAME" value="battery.D1" x="0" y="-6.35" size="0" layer="48" display="off"/>
-<attribute name="IMAGE" value="http://media.digikey.com/photos/STMicro%20Photos/1N5819.JPG" x="0" y="-6.35" size="0" layer="48" display="off"/>
-<attribute name="IRECT" value="1A" x="0" y="-6.35" size="0" layer="48" display="off"/>
-<attribute name="MFR" value="STMicroelectronics" x="0" y="-6.35" size="0" layer="48" display="off"/>
-<attribute name="MIN_QTY" value="1" x="0" y="-6.35" size="0" layer="48" display="off"/>
-<attribute name="MPN" value="1N5817" x="0" y="-6.35" size="0" layer="48" display="off"/>
-<attribute name="PACKAGE" value="DIOAD1125W78L520D270_HS" x="0" y="-6.35" size="0" layer="48" display="off"/>
-<attribute name="PRICE" value="$0.57" x="0" y="-6.35" size="0" layer="48" display="off"/>
-<attribute name="SIZE" value="TH" x="0" y="-6.35" size="0" layer="48" display="off"/>
-<attribute name="STOCK" value="STOCK" x="0" y="-6.35" size="0" layer="48" display="off"/>
-<attribute name="VALUE" value="450mV" x="0" y="-6.35" size="0" layer="48" display="off"/>
-<attribute name="VREV" value="20V" x="0" y="-6.35" size="0" layer="48" display="off"/>
+<element name="D1" library="KoalaBuild" package="DIOAD1125W78L520D270_HS" value="" x="5.9159125" y="-14.178709375" rot="R180">
+<attribute name="DATASHEET" value="http://www.st.com/web/en/resource/technical/document/datasheet/CD00001625.pdf" x="0" y="10.16" size="0" layer="48" display="off"/>
+<attribute name="DATA_SHEET" value="http://www.st.com/web/en/resource/technical/document/datasheet/CD00001625.pdf" x="0" y="10.16" size="0" layer="48" display="off"/>
+<attribute name="DB" value="/Users/swanson/research/NVSL/src/with-git/gtron_devel/Gadgets/Tools/Koala/Koala/PartLibrary/Digikey/Schottky-Diodes-TH.csv" x="0" y="10.16" size="0" layer="48" display="off"/>
+<attribute name="DEVICE" value="TH-DO-41-AND-DO-204AL" x="0" y="10.16" size="0" layer="48" display="off"/>
+<attribute name="DIST" value="Digikey" x="0" y="10.16" size="0" layer="48" display="off"/>
+<attribute name="DISTPN" value="497-4547-1-ND" x="0" y="10.16" size="0" layer="48" display="off"/>
+<attribute name="HIERARCHY_NAME" value="battery.D1" x="0" y="10.16" size="0" layer="48" display="off"/>
+<attribute name="IMAGE" value="http://media.digikey.com/photos/STMicro%20Photos/1N5819.JPG" x="0" y="10.16" size="0" layer="48" display="off"/>
+<attribute name="IRECT" value="1A" x="0" y="10.16" size="0" layer="48" display="off"/>
+<attribute name="MFR" value="STMicroelectronics" x="0" y="10.16" size="0" layer="48" display="off"/>
+<attribute name="MIN_QTY" value="1" x="0" y="10.16" size="0" layer="48" display="off"/>
+<attribute name="MPN" value="1N5817" x="0" y="10.16" size="0" layer="48" display="off"/>
+<attribute name="PACKAGE" value="DIOAD1125W78L520D270_HS" x="0" y="10.16" size="0" layer="48" display="off"/>
+<attribute name="PRICE" value="$0.57" x="0" y="10.16" size="0" layer="48" display="off"/>
+<attribute name="SIZE" value="TH" x="0" y="10.16" size="0" layer="48" display="off"/>
+<attribute name="STOCK" value="STOCK" x="0" y="10.16" size="0" layer="48" display="off"/>
+<attribute name="VALUE" value="450mV" x="0" y="10.16" size="0" layer="48" display="off"/>
+<attribute name="VREV" value="20V" x="0" y="10.16" size="0" layer="48" display="off"/>
 </element>
 <element name="J1" library="Components" package="HDRV5W63P254_5X1_1270X254H838_HS" value="" x="-31.87" y="-38.23" locked="yes" rot="R180">
 <attribute name="CASE" value="" x="0" y="0" size="0" layer="48" display="off"/>
@@ -8659,49 +8659,49 @@ design rules under a new name.
 <attribute name="VALUE" value="150" x="-20.32" y="-74.93" size="0" layer="48" display="off"/>
 <attribute name="VALUE_QUERY" value="150" x="-20.32" y="-74.93" size="0" layer="48" display="off"/>
 </element>
-<element name="R2" library="KoalaBuild" package="RESAD770W45L370D210_HS" value="100" x="8.801334375" y="-34.647296875" rot="R270">
-<attribute name="CASE" value="TH" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/throughhole/Yageo_LR_CFR_2013.pdf" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="DATA_SHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/throughhole/Yageo_LR_CFR_2013.pdf" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="DB" value="/Users/swanson/research/NVSL/src/with-git/gtron_devel/Gadgets/Tools/Koala/Koala/PartLibrary/Digikey/Resistors-TH.csv" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="DEVICE" value="TH-1/6W-CARBON" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="DIST" value="Digikey" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="DISTPN" value="100EBK-ND" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="HIERARCHY_NAME" value="led_2.U$1" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="IMAGE" value="http://media.digikey.com/Renders/Yageo%20Renders/CFR-12JR-100R.jpg" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="MFR" value="Yageo" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="MIN_QTY" value="1" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="MPN" value="CFR-12JB-52-100R" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="PACKAGE" value="RESAD770W45L370D210_HS" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="PRICE" value="$0.10" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="PWR" value="167mW" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="SIZE" value="TH" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="STOCK" value="STOCK" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="TOL" value="5%" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="VALUE" value="100" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="VALUE_QUERY" value="100" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
+<element name="R2" library="KoalaBuild" package="RESAD770W45L370D210_HS" value="100" x="6.261334375" y="-20.677296875">
+<attribute name="CASE" value="TH" x="16.0640375" y="-24.39863125" size="0" layer="48" rot="R90" display="off"/>
+<attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/throughhole/Yageo_LR_CFR_2013.pdf" x="16.0640375" y="-24.39863125" size="0" layer="48" rot="R90" display="off"/>
+<attribute name="DATA_SHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/throughhole/Yageo_LR_CFR_2013.pdf" x="16.0640375" y="-24.39863125" size="0" layer="48" rot="R90" display="off"/>
+<attribute name="DB" value="/Users/swanson/research/NVSL/src/with-git/gtron_devel/Gadgets/Tools/Koala/Koala/PartLibrary/Digikey/Resistors-TH.csv" x="16.0640375" y="-24.39863125" size="0" layer="48" rot="R90" display="off"/>
+<attribute name="DEVICE" value="TH-1/6W-CARBON" x="16.0640375" y="-24.39863125" size="0" layer="48" rot="R90" display="off"/>
+<attribute name="DIST" value="Digikey" x="16.0640375" y="-24.39863125" size="0" layer="48" rot="R90" display="off"/>
+<attribute name="DISTPN" value="100EBK-ND" x="16.0640375" y="-24.39863125" size="0" layer="48" rot="R90" display="off"/>
+<attribute name="HIERARCHY_NAME" value="led_2.U$1" x="16.0640375" y="-24.39863125" size="0" layer="48" rot="R90" display="off"/>
+<attribute name="IMAGE" value="http://media.digikey.com/Renders/Yageo%20Renders/CFR-12JR-100R.jpg" x="16.0640375" y="-24.39863125" size="0" layer="48" rot="R90" display="off"/>
+<attribute name="MFR" value="Yageo" x="16.0640375" y="-24.39863125" size="0" layer="48" rot="R90" display="off"/>
+<attribute name="MIN_QTY" value="1" x="16.0640375" y="-24.39863125" size="0" layer="48" rot="R90" display="off"/>
+<attribute name="MPN" value="CFR-12JB-52-100R" x="16.0640375" y="-24.39863125" size="0" layer="48" rot="R90" display="off"/>
+<attribute name="PACKAGE" value="RESAD770W45L370D210_HS" x="16.0640375" y="-24.39863125" size="0" layer="48" rot="R90" display="off"/>
+<attribute name="PRICE" value="$0.10" x="16.0640375" y="-24.39863125" size="0" layer="48" rot="R90" display="off"/>
+<attribute name="PWR" value="167mW" x="16.0640375" y="-24.39863125" size="0" layer="48" rot="R90" display="off"/>
+<attribute name="SIZE" value="TH" x="16.0640375" y="-24.39863125" size="0" layer="48" rot="R90" display="off"/>
+<attribute name="STOCK" value="STOCK" x="16.0640375" y="-24.39863125" size="0" layer="48" rot="R90" display="off"/>
+<attribute name="TOL" value="5%" x="16.0640375" y="-24.39863125" size="0" layer="48" rot="R90" display="off"/>
+<attribute name="VALUE" value="100" x="16.0640375" y="-24.39863125" size="0" layer="48" rot="R90" display="off"/>
+<attribute name="VALUE_QUERY" value="100" x="16.0640375" y="-24.39863125" size="0" layer="48" rot="R90" display="off"/>
 </element>
-<element name="R3" library="KoalaBuild" package="RESAD770W45L370D210_HS" value="100" x="13.12856875" y="-35.376246875" rot="R270">
-<attribute name="CASE" value="TH" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/throughhole/Yageo_LR_CFR_2013.pdf" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="DATA_SHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/throughhole/Yageo_LR_CFR_2013.pdf" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="DB" value="/Users/swanson/research/NVSL/src/with-git/gtron_devel/Gadgets/Tools/Koala/Koala/PartLibrary/Digikey/Resistors-TH.csv" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="DEVICE" value="TH-1/6W-CARBON" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="DIST" value="Digikey" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="DISTPN" value="100EBK-ND" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="HIERARCHY_NAME" value="led_2.U$2" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="IMAGE" value="http://media.digikey.com/Renders/Yageo%20Renders/CFR-12JR-100R.jpg" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="MFR" value="Yageo" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="MIN_QTY" value="1" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="MPN" value="CFR-12JB-52-100R" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="PACKAGE" value="RESAD770W45L370D210_HS" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="PRICE" value="$0.10" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="PWR" value="167mW" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="SIZE" value="TH" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="STOCK" value="STOCK" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="TOL" value="5%" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="VALUE" value="100" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
-<attribute name="VALUE_QUERY" value="100" x="5.08" y="-44.45" size="0" layer="48" display="off"/>
+<element name="R3" library="KoalaBuild" package="RESAD770W45L370D210_HS" value="100" x="16.93856875" y="-20.136246875" rot="R270">
+<attribute name="CASE" value="TH" x="8.89" y="-29.21" size="0" layer="48" display="off"/>
+<attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/throughhole/Yageo_LR_CFR_2013.pdf" x="8.89" y="-29.21" size="0" layer="48" display="off"/>
+<attribute name="DATA_SHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/throughhole/Yageo_LR_CFR_2013.pdf" x="8.89" y="-29.21" size="0" layer="48" display="off"/>
+<attribute name="DB" value="/Users/swanson/research/NVSL/src/with-git/gtron_devel/Gadgets/Tools/Koala/Koala/PartLibrary/Digikey/Resistors-TH.csv" x="8.89" y="-29.21" size="0" layer="48" display="off"/>
+<attribute name="DEVICE" value="TH-1/6W-CARBON" x="8.89" y="-29.21" size="0" layer="48" display="off"/>
+<attribute name="DIST" value="Digikey" x="8.89" y="-29.21" size="0" layer="48" display="off"/>
+<attribute name="DISTPN" value="100EBK-ND" x="8.89" y="-29.21" size="0" layer="48" display="off"/>
+<attribute name="HIERARCHY_NAME" value="led_2.U$2" x="8.89" y="-29.21" size="0" layer="48" display="off"/>
+<attribute name="IMAGE" value="http://media.digikey.com/Renders/Yageo%20Renders/CFR-12JR-100R.jpg" x="8.89" y="-29.21" size="0" layer="48" display="off"/>
+<attribute name="MFR" value="Yageo" x="8.89" y="-29.21" size="0" layer="48" display="off"/>
+<attribute name="MIN_QTY" value="1" x="8.89" y="-29.21" size="0" layer="48" display="off"/>
+<attribute name="MPN" value="CFR-12JB-52-100R" x="8.89" y="-29.21" size="0" layer="48" display="off"/>
+<attribute name="PACKAGE" value="RESAD770W45L370D210_HS" x="8.89" y="-29.21" size="0" layer="48" display="off"/>
+<attribute name="PRICE" value="$0.10" x="8.89" y="-29.21" size="0" layer="48" display="off"/>
+<attribute name="PWR" value="167mW" x="8.89" y="-29.21" size="0" layer="48" display="off"/>
+<attribute name="SIZE" value="TH" x="8.89" y="-29.21" size="0" layer="48" display="off"/>
+<attribute name="STOCK" value="STOCK" x="8.89" y="-29.21" size="0" layer="48" display="off"/>
+<attribute name="TOL" value="5%" x="8.89" y="-29.21" size="0" layer="48" display="off"/>
+<attribute name="VALUE" value="100" x="8.89" y="-29.21" size="0" layer="48" display="off"/>
+<attribute name="VALUE_QUERY" value="100" x="8.89" y="-29.21" size="0" layer="48" display="off"/>
 </element>
 <element name="U1" library="Components" package="PROTO-AREA-10X10" value="PROTO-AREA-10X10" x="-48.43" y="-29.43" locked="yes">
 <attribute name="DIST" value="Gadgetron" x="0" y="0" size="0" layer="48" display="off"/>
@@ -9095,7 +9095,7 @@ design rules under a new name.
 <contactref element="U2" pad="D6"/>
 <wire x1="23.3172" y1="-8.4582" x2="23.35" y2="-8.54" width="0.254" layer="1"/>
 <wire x1="23.3172" y1="-8.4582" x2="9.8298" y2="5.0292" width="0.254" layer="1"/>
-<wire x1="8.2296" y1="5.0292" x2="13.12856875" y2="-39.226246875" width="0.254" layer="1"/>
+<wire x1="8.2296" y1="5.0292" x2="16.93856875" y2="-23.986246875" width="0.254" layer="1"/>
 <wire x1="9.8298" y1="5.0292" x2="8.2296" y2="5.0292" width="0.254" layer="1"/>
 </signal>
 <signal name="D8_7_BRAIN">
@@ -9114,7 +9114,7 @@ design rules under a new name.
 <contactref element="U2" pad="D9"/>
 <wire x1="10.7442" y1="-25.6032" x2="3.8862" y2="-18.7452" width="0.254" layer="1"/>
 <wire x1="3.8862" y1="-18.7452" x2="3.8862" y2="5.9436" width="0.254" layer="1"/>
-<wire x1="3.8862" y1="5.9436" x2="8.801334375" y2="-38.497296875" width="0.254" layer="1"/>
+<wire x1="3.8862" y1="5.9436" x2="10.111334375" y2="-20.677296875" width="0.254" layer="1"/>
 <wire x1="34.0614" y1="-25.6032" x2="10.7442" y2="-25.6032" width="0.254" layer="1"/>
 <wire x1="38.4048" y1="-21.2598" x2="34.0614" y2="-25.6032" width="0.254" layer="1"/>
 <wire x1="38.4048" y1="-21.2598" x2="38.59" y2="-21.24" width="0.254" layer="1"/>
@@ -9127,7 +9127,7 @@ design rules under a new name.
 <contactref element="D1" pad="A"/>
 <wire x1="-4.3434" y1="-37.9476" x2="-4.35" y2="-38" width="0.254" layer="1"/>
 <wire x1="-4.3434" y1="-37.9476" x2="0.2286" y2="-33.3756" width="0.254" layer="1"/>
-<wire x1="0.2286" y1="-24.4602" x2="0.2909125" y2="-30.688709375" width="0.254" layer="1"/>
+<wire x1="0.2286" y1="-24.4602" x2="0.2909125" y2="-14.178709375" width="0.254" layer="1"/>
 <wire x1="0.2286" y1="-33.3756" x2="0.2286" y2="-24.4602" width="0.254" layer="1"/>
 </signal>
 <signal name="N$1_4_LED_2">
@@ -9136,7 +9136,7 @@ design rules under a new name.
 <wire x1="-28.8036" y1="42.9768" x2="-28.911" y2="43.1716" width="0.254" layer="1"/>
 <wire x1="-28.8036" y1="42.9768" x2="0.4572" y2="13.716" width="0.254" layer="1"/>
 <wire x1="0.4572" y1="13.716" x2="3.6576" y2="13.716" width="0.254" layer="1"/>
-<wire x1="3.6576" y1="13.716" x2="8.801334375" y2="-30.797296875" width="0.254" layer="1"/>
+<wire x1="3.6576" y1="13.716" x2="2.411334375" y2="-20.677296875" width="0.254" layer="1"/>
 </signal>
 <signal name="N$2_4_LED_2">
 <contactref element="LED1" pad="3"/>
@@ -9145,7 +9145,7 @@ design rules under a new name.
 <wire x1="-30.1752" y1="45.0342" x2="-26.289" y2="45.0342" width="0.254" layer="1"/>
 <wire x1="-30.1752" y1="45.0342" x2="-30.181" y2="45.1084" width="0.254" layer="1"/>
 <wire x1="5.715" y1="13.0302" x2="8.001" y2="13.0302" width="0.254" layer="1"/>
-<wire x1="8.001" y1="13.0302" x2="13.12856875" y2="-31.526246875" width="0.254" layer="1"/>
+<wire x1="8.001" y1="13.0302" x2="16.93856875" y2="-16.286246875" width="0.254" layer="1"/>
 </signal>
 <signal name="N$3_4_LED_2">
 <contactref element="LED1" pad="1"/>
@@ -9159,7 +9159,7 @@ design rules under a new name.
 <signal name="POS_3_BATTERY">
 <contactref element="D1" pad="C"/>
 <contactref element="U2" pad="VBAT"/>
-<wire x1="11.6586" y1="-24.2316" x2="11.5409125" y2="-30.688709375" width="0.254" layer="1"/>
+<wire x1="11.6586" y1="-24.2316" x2="11.5409125" y2="-14.178709375" width="0.254" layer="1"/>
 <wire x1="20.3454" y1="-24.2316" x2="11.6586" y2="-24.2316" width="0.254" layer="1"/>
 <wire x1="23.3172" y1="-21.2598" x2="20.3454" y2="-24.2316" width="0.254" layer="1"/>
 <wire x1="23.3172" y1="-21.2598" x2="23.35" y2="-21.24" width="0.254" layer="1"/>
