@@ -299,11 +299,6 @@ def autoplace (brd, display = False):
         print_board_elements(brd, locked_elements, unlocked_elements)
 
 
-    # Checks if any unlocked component can be passed to the locked dictionary. 
-    #ret = unlocked_to_locked(board, locked_elements, unlocked_elements)
-    #if (ret == 0):
-    #    print ("No parts overlap or are off-Board")
-    #    #sys.exit(0)
 
     ## Get board dimensions
     board_min_x = board.bounds[0]
