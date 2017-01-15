@@ -1,9 +1,13 @@
 include ../Gadgetron/dev.make
 
-.PHONY:test
+.PHONY: test
 test:
-	true
+	python -m unittest discover
 
 .PHONY: clean
 clean:
-	true
+	rm -rf test/placed*.brd
+	rm -rf test/routed*.brd
+	rm -rf test/*.job
+	rm -rf test/*.pro
+	rm -rf test/*.pyc

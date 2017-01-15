@@ -119,7 +119,7 @@ def check_parts_overlap (input_name):
         return False
 
 
-def check_autoplace (input_name, output_name):
+def check_autoplace (quetzal_path, input_name, output_name):
 
     # Input board name
     input_brd = input_name + ".brd"
@@ -127,7 +127,8 @@ def check_autoplace (input_name, output_name):
     # Output board name
     output_brd = output_name + ".brd"
 
-    args = "quetzal " + " --inbrd " + input_brd + " --outbrd " + output_brd
+    args =  "python " + quetzal_path + "/quetzal.py " + \
+            " --inbrd " + input_brd + " --outbrd " + output_brd
 
     ret = 1
     try:
@@ -143,22 +144,29 @@ def check_autoplace (input_name, output_name):
 
 class TestAutoPlacing(unittest.TestCase):
 
+    ## unittest setup function
+    def setUp(self): 
+        ## Path ../test/ 
+        self.me = os.path.dirname(os.path.realpath(__file__))
+        ## Path ../Quetzal/
+        self.quetzal = os.path.abspath(os.path.join(self.me,"..","Quetzal"))
+
     def test_first_board(self):
 
         print "\n Running First Board Check ..."
 
         ## Board to Check
-        input_name = "test_1"
+        input_name = self.me + "/test_1"
 
         ## Auto-place output board
-        placed_name = "placed_1"
+        placed_name = self.me + "/placed_1"
 
         ## Routed output board
-        routed_name = "routed_1"
+        routed_name = self.me + "/routed_1"
 
 
         ## Check if Quetzal auto-placer works
-        ret = check_autoplace(input_name, placed_name)
+        ret = check_autoplace(self.quetzal, input_name, placed_name)
         self.assertTrue (ret , True)
 
         ## Check if parts overlap
@@ -176,17 +184,17 @@ class TestAutoPlacing(unittest.TestCase):
         print "\n Running Second Board Check ..."
 
         ## Board to Check
-        input_name = "test_2"
+        input_name = self.me + "/test_2"
 
         ## Auto-place output board
-        placed_name = "placed_2"
+        placed_name = self.me + "/placed_2"
 
         ## Routed output board
-        routed_name = "routed_2"
+        routed_name = self.me + "/routed_2"
 
 
         ## Check if Quetzal auto-placer works
-        ret = check_autoplace(input_name, placed_name)
+        ret = check_autoplace(self.quetzal, input_name, placed_name)
         self.assertTrue (ret , True)
 
         ## Check if parts overlap
@@ -204,17 +212,17 @@ class TestAutoPlacing(unittest.TestCase):
         print "\n Running Third Board Check ..."
 
         ## Board to Check
-        input_name = "test_3"
+        input_name = self.me + "/test_3"
 
         ## Auto-place output board
-        placed_name = "placed_3"
+        placed_name = self.me + "/placed_3"
 
         ## Routed output board
-        routed_name = "routed_3"
+        routed_name = self.me + "/routed_3"
 
 
         ## Check if Quetzal auto-placer works
-        ret = check_autoplace(input_name, placed_name)
+        ret = check_autoplace(self.quetzal, input_name, placed_name)
         self.assertTrue (ret , True)
 
         ## Check if parts overlap
